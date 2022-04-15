@@ -1,0 +1,4 @@
+version: "3.4"
+services:
+    app:
+      image: "elbasit/new_rasax_abc:latest"

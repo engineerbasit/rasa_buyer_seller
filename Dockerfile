@@ -18,3 +18,9 @@ COPY ./actions /app/actions
 
 # By best practices, don't run the code with root user
 USER 1001
+
+RUN rasa train
+RUN chmod a+rwx /app/server.sh
+
+ENTRYPOINT ["/app/server.sh"]
+
